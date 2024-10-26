@@ -67,8 +67,11 @@ function App() {
     },
   });
 
-  const [Inp, setInp] = useState("");
+  const [Inp, setInp] = useState({
+    task: "",
+  });
   const [updateBtn, setBtn] = useState(false);
+
 
   const handleAdd = (Inp) => {
     if(Inp.task.trim()!=='')
